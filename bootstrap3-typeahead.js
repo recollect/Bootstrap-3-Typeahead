@@ -582,12 +582,6 @@
                 case 18: // alt
                     break;
 
-                case 9: // tab
-                    if (!this.shown || (this.showHintOnFocus && !this.keyPressed)) {
-                        return;
-                    }
-                    this.select();
-                    break;
                 case 13: // enter
                     if (!this.shown) {
                         return;
@@ -595,6 +589,7 @@
                     this.select();
                     break;
 
+                case 9: // tab
                 case 27: // escape
                     if (!this.shown) {
                         return;
